@@ -1,0 +1,28 @@
+.hero {
+  display: block;
+  font-weight: 800;
+  margin-top: 8rem;
+}
+
+.hero-head-text {
+  font-size: 2.85rem;
+}
+
+.hero-name {
+  color: var(--bright-green);
+}
+
+section {
+  width: min(70ch, 100% - 4rem);
+  margin-inline: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 4rem;
+}
+
+section:nth-child(2n) {
+  border: solid var(--green) 5px;
+  border-radius: 5px;
+}

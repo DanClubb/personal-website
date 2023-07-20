@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+main {
+  text-align: center;
+  color: var(--dark-grey);
+}
