@@ -4,6 +4,7 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --green: #57ba86;
+  --transparent-green: hsl(148 42% 54% / 0.7);
   --bright-green: #00ac44;
   --dark-grey: #374151;
   --light-grey: #666666;

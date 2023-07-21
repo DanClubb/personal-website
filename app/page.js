@@ -3,6 +3,8 @@
 import "./styles/page.css";
 import { Fragment, useRef, useEffect } from "react";
 import { useNav } from "./context/nav-context";
+import Image from "next/image";
+import heroDevices from "../public/hero-devices.svg";
 
 export default function Home() {
   const { updateCurrentSection } = useNav();
@@ -31,10 +33,30 @@ export default function Home() {
   return (
     <Fragment>
       <section id="hero" className="hero" ref={heroRef}>
-        <h1 className="hero-head-text">
-          Hi, I&apos;m <span className="hero-name">Daniel</span>
-        </h1>
-        <p className="hero-sub-text">Frontend Developer</p>
+        <div className="hero__text">
+          <h1 className="hero__text--header">
+            Hi, I&apos;m <span className="hero__text--name">Daniel</span>
+          </h1>
+          <h3 className="hero__text--sub-header">Frontend Developer</h3>
+          <p className="hero__text--paragraphy">
+            I am a frontend developer who loves problem solving while creating
+            complex functionality and implementing designs with pixel-perfect
+            accuracy.{" "}
+          </p>
+          <p className="hero__text--paragraphy">
+            Away from the keyboard I enjoy learning new skills, keeping fit and
+            recharging my batteries while socialising with friends
+          </p>
+        </div>
+
+        <div className="hero__devices-container">
+          <Image
+            src={heroDevices}
+            fill={true}
+            alt="collection of devices I use while working"
+            className="hero__devices"
+          />
+        </div>
       </section>
       <section id="experience" className="experience" ref={experienceRef}>
         <h1>Experience</h1>
@@ -42,7 +64,7 @@ export default function Home() {
       <section id="projects" className="projects" ref={projectsRef}>
         <h1>Projects</h1>
       </section>
-      <section id="contact" className="contact" ref={contactRef}>
+      <section id="contact" cclassName="contact" ref={contactRef}>
         <h1>Contact</h1>
       </section>
     </Fragment>

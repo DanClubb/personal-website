@@ -61,7 +61,7 @@ function Header() {
                   currentSection === "experience" ? "active" : ""
                 }`}
               >
-                Experince
+                Experience
               </Link>
             </li>
             <li>

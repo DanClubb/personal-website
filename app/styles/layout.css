@@ -10,6 +10,5 @@ body {
 }
 
 main {
-  text-align: center;
   color: var(--dark-grey);
 }
