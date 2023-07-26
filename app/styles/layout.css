@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  color: var(--dark-grey);
   font-family: var(--font-mono);
   font-size: 1.125rem;
   line-height: 1.5;
@@ -11,4 +12,8 @@ body {
 
 main {
   color: var(--dark-grey);
+}
+
+footer {
+  background-color: var(--green);
 }

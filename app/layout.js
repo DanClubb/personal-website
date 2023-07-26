@@ -3,6 +3,7 @@ import "./styles/layout.css";
 import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import { NavContextProvider } from "./context/nav-context";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <NavContextProvider>
           <Header />
           <main>{children}</main>
-          <footer>Footer</footer>
+          <Footer />
         </NavContextProvider>
       </body>
     </html>

@@ -1,10 +1,22 @@
+section {
+  width: min(70ch, 100% - 4rem);
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 4rem;
+}
+
+.section-heading {
+  color: var(--bright-green);
+  font-size: 2.85rem;
+}
+
 .hero {
   font-weight: 800;
   margin-top: 1rem;
-}
-
-.hero__text {
-  text-align: center;
 }
 
 .hero__text--header {
@@ -27,7 +39,6 @@
 
 .hero__devices-container {
   position: unset !important;
-  margin-top: 2rem;
 }
 
 .hero__devices {
@@ -37,18 +48,50 @@
   height: unset !important;
 }
 
-section {
-  width: min(70ch, 100% - 4rem);
-  margin-inline: auto;
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  scroll-margin-top: 4rem;
+.experience__card {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.experience__title {
+  margin-bottom: 2rem;
+}
+
+.experience__description {
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-size: 1.2rem;
+}
+
+.responsibilities {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  list-style: square;
+}
+
+.responsibilities > li {
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 53em) {
+  .hero__text {
+    text-align: center;
+  }
+
+  .hero__devices-container {
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 53em) {
+  .section-heading {
+    color: var(--bright-green);
+    font-size: 3.85rem;
+  }
+
   .hero {
     flex-direction: row;
     gap: 5rem;
@@ -57,6 +100,7 @@ section {
 
   .hero__text {
     flex: 1;
+    line-height: 1.4;
   }
 
   .hero__text--header {
@@ -68,6 +112,6 @@ section {
   }
 
   .hero__devices-container {
-    flex: 2;
+    flex: 1;
   }
 }

@@ -1,0 +1,60 @@
+.projects-container {
+  display: flex;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+  padding: 1rem;
+  width: 20rem;
+  background-color: var(--green);
+  border: 5px solid var(--light-grey);
+  border-radius: 5px;
+}
+
+.project__title {
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+  font-size: 2.4rem;
+}
+
+.project__description {
+  margin-bottom: 6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.project__tag {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border-radius: 100px;
+  background-color: var(--light-grey);
+  color: white;
+  text-align: center;
+}
+
+.github:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 53em) {
+  .projects-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 53em) {
+  .projects-container {
+    gap: 3rem;
+    margin-top: 6rem;
+  }
+}
