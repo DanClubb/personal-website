@@ -150,7 +150,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section id="contact" cclassName="contact" ref={contactRef}>
+      <section id="contact" className="contact" ref={contactRef}>
         <h1 className="section-heading">Contact Me</h1>
         <ContactForm />
       </section>

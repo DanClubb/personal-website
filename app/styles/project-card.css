@@ -29,6 +29,7 @@
 .tags {
   display: flex;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .project__tag {
