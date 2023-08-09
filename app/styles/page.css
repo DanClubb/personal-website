@@ -68,12 +68,16 @@ strong {
 
 .responsibilities {
   margin-top: 3rem;
-  margin-left: 1rem;
   list-style: square;
+}
+
+.responsibilities h3 {
+  margin-bottom: 0.8rem;
 }
 
 .responsibilities > li {
   margin-bottom: 1.2rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 53em) {

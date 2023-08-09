@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../styles/contact-form.css";
-import Tick from "./Tick";
-import LoadingSpinner from "./LoadingSpinner";
+import "../../styles/contact-form.css";
+import Tick from "../Tick";
+import LoadingSpinner from "../LoadingSpinner";
 
 function ContactForm() {
   const [formBtnContent, setFormBtnContent] = useState("Send");
