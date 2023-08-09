@@ -1,0 +1,12 @@
+.cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4.4rem;
+  scroll-margin-top: 1rem;
+}
+
+.cv {
+  box-shadow: 2px 2px 25px var(--dark-grey);
+}
