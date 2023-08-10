@@ -56,6 +56,7 @@ function ContactForm() {
           type="text"
           className="contact-form__input"
           name="user_name"
+          id="user_name"
           placeholder="Name"
           required
         />
@@ -68,6 +69,7 @@ function ContactForm() {
           type="email"
           className="contact-form__input"
           name="user_email"
+          id="user_email"
           placeholder="example@gmail.com"
           required
         />
@@ -79,6 +81,7 @@ function ContactForm() {
         <textarea
           className="contact-form__input contact-form__message"
           name="message"
+          id="message"
           required
         ></textarea>
       </div>
