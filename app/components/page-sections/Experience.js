@@ -15,25 +15,27 @@ function Experience() {
         <strong>Greeneking</strong> on their online booking journey allowing
         users to book a table or occasion
       </p>
-      <ul className="responsibilities">
+      <div className="responsibilities">
         <h3>My responsibilities included:</h3>
-        <li>
-          Developing and maintaining web applications using React.js and other
-          related technologies
-        </li>
-        <li>
-          Collaborating with cross-functional teams including designers, product
-          managers, and other developers
-        </li>
-        <li>
-          Implementing responsive design and ensuring cross-browser
-          compatibility
-        </li>
-        <li>
-          Participating in code reviews and providing constructive feedback to
-          other developers
-        </li>
-      </ul>
+        <ul className="responsibilities-list">
+          <li>
+            Developing and maintaining web applications using React.js and other
+            related technologies
+          </li>
+          <li>
+            Collaborating with cross-functional teams including designers,
+            product managers, and other developers
+          </li>
+          <li>
+            Implementing responsive design and ensuring cross-browser
+            compatibility
+          </li>
+          <li>
+            Participating in code reviews and providing constructive feedback to
+            other developers
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

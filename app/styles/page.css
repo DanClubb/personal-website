@@ -68,19 +68,22 @@ strong {
 
 .responsibilities {
   margin-top: 3rem;
-  list-style: square;
 }
 
 .responsibilities h3 {
   margin-bottom: 0.8rem;
 }
 
-.responsibilities > li {
+.responsibilities-list {
+  list-style: square;
+}
+
+.responsibilities-list > li {
   margin-bottom: 1.2rem;
   margin-left: 1rem;
 }
 
-.responsibilities > li::marker {
+.responsibilities-list > li::marker {
   color: var(--bright-green);
 }
 
