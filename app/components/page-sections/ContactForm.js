@@ -49,7 +49,9 @@ function ContactForm() {
   return (
     <form className="contact-form" ref={form} onSubmit={sendEmail}>
       <div className="label-input-container">
-        <label className="contact-form__label">What is your name?</label>
+        <label className="contact-form__label" for="user_name">
+          What is your name?
+        </label>
         <input
           type="text"
           className="contact-form__input"
@@ -59,7 +61,9 @@ function ContactForm() {
         />
       </div>
       <div className="label-input-container">
-        <label className="contact-form__label">What is your email?</label>
+        <label className="contact-form__label" for="user_email">
+          What is your email?
+        </label>
         <input
           type="email"
           className="contact-form__input"
@@ -69,7 +73,9 @@ function ContactForm() {
         />
       </div>
       <div className="label-input-container">
-        <label className="contact-form__label">Your message</label>
+        <label className="contact-form__label" for="message">
+          Your message
+        </label>
         <textarea
           className="contact-form__input contact-form__message"
           name="message"
