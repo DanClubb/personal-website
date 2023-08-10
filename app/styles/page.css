@@ -80,6 +80,10 @@ strong {
   margin-left: 1rem;
 }
 
+.responsibilities > li::marker {
+  color: var(--bright-green);
+}
+
 @media (max-width: 53em) {
   .hero__text {
     text-align: center;

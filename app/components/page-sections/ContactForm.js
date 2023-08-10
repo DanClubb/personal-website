@@ -17,6 +17,8 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    form.current.checkValidity();
+    form.current.reportValidity();
 
     setIsLoading(true);
     emailjs
@@ -53,6 +55,7 @@ function ContactForm() {
           className="contact-form__input"
           name="user_name"
           placeholder="Name"
+          required
         />
       </div>
       <div className="label-input-container">
@@ -62,6 +65,7 @@ function ContactForm() {
           className="contact-form__input"
           name="user_email"
           placeholder="example@gmail.com"
+          required
         />
       </div>
       <div className="label-input-container">
@@ -69,6 +73,7 @@ function ContactForm() {
         <textarea
           className="contact-form__input contact-form__message"
           name="message"
+          required
         ></textarea>
       </div>
       <div className="label-input-container">
