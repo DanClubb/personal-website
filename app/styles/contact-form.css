@@ -106,7 +106,9 @@
     border: 3px solid var(--green);
   }
 
-  .contact-form__button:hover {
+  .contact-form__button:hover,
+  .contact-form__button:focus {
+    outline: none;
     cursor: pointer;
     background-position: left;
     transition: 300ms ease-out;
