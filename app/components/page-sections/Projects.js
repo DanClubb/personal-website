@@ -8,6 +8,7 @@ function Projects() {
         "An online multiplayer TicTacToe game allowing users on different devices to play against each other",
       tag: "done",
       url: "https://tic-tac-toe-6mi5.onrender.com/",
+      tech: ["react", "socketio", "typescript", "tailwind"],
     },
     {
       title: "Note Share",
@@ -35,6 +36,7 @@ function Projects() {
             description={project.description}
             tag={project.tag}
             url={project.url}
+            tech={project.tech}
           />
         );
       })}

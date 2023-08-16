@@ -1,12 +1,13 @@
 import "../styles/project-card.css";
 import newTab from "../../public/new-tab.svg";
 import IMAGES from "../../public/images/Images";
+import TECH_LOGOS from "../../public/images/TechLogos";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Fragment } from "react";
 
-function ProjectCard({ title, description, tag, url }) {
+function ProjectCard({ title, description, tag, url, tech }) {
   return (
     <article className="project">
       <h2 className="project__title">{title}</h2>
@@ -68,7 +69,47 @@ function ProjectCard({ title, description, tag, url }) {
       )}
 
       <p className="project__description">{description}</p>
-      <div className="tags">
+      {tech && (
+        <div className="project__tech">
+          <figure>
+            <Image
+              src={TECH_LOGOS.react}
+              width={30}
+              height={30}
+              alt="react logo"
+            />
+            <figcaption>react.js</figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={TECH_LOGOS.socketio}
+              width={30}
+              height={30}
+              alt="socket.io logo"
+            />
+            <figcaption>socket.io</figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={TECH_LOGOS.typescript}
+              width={30}
+              height={30}
+              alt="typescript logo"
+            />
+            <figcaption>typescript</figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={TECH_LOGOS.tailwind}
+              width={30}
+              height={30}
+              alt="tailwind logo"
+            />
+            <figcaption>tailwindcss</figcaption>
+          </figure>
+        </div>
+      )}
+      <div className={`tags ${tag === "done" && "done"}`}>
         {tag === "done" ? (
           <Fragment>
             <a className="project-link" href={url} target="_blank">
@@ -96,7 +137,10 @@ function ProjectCard({ title, description, tag, url }) {
             </a>
           </Fragment>
         ) : (
-          <div className="project__tag">{tag}</div>
+          <div className="project__tag">
+            <div className="project__tag-dot"></div>
+            {tag}
+          </div>
         )}
       </div>
     </article>
