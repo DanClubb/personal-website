@@ -11,6 +11,7 @@ section {
 
 .section-heading {
   color: var(--bright-green);
+  text-transform: uppercase;
   font-size: 2.85rem;
 }
 
