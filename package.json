@@ -15,7 +15,8 @@
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-pdf": "^7.3.3"
+    "react-pdf": "^7.3.3",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "raw-loader": "^4.0.2"

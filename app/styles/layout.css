@@ -15,5 +15,6 @@ main {
 }
 
 footer {
-  background-color: var(--green);
+  background-color: var(--light-grey);
+  color: var(--white);
 }

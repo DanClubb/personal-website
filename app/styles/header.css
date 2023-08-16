@@ -72,7 +72,6 @@ header {
 @media (min-width: 53em) {
   header {
     padding: 1rem 3rem;
-
     transition: background-color 200ms linear;
   }
 

@@ -4,13 +4,13 @@ function Experience() {
       <h3 className="experience__title">Zone | September 2021 - July 2023</h3>
       <p className="experience__description">
         Zone is a digital agency specializing in the design, development, and
-        implementation of digital solutions and experiences focusing on helping
-        clients across various industries create and optimize their digital
-        presence to engage and connect with their target audience.
+        implementation of digital solutions. Zone focuses on helping clients
+        across various industries create and optimize their digital presence to
+        engage and connect with their target audience.
       </p>
 
       <p className="experience__description">
-        During my time at Zone I worked on a couple client projects.{" "}
+        During my time at Zone I worked on a couple of client projects.{" "}
         <strong>Elextrolux</strong> on their online retail store, and{" "}
         <strong>Greeneking</strong> on their online booking journey allowing
         users to book a table or occasion

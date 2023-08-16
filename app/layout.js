@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dan Clubb",
+  icons: {
+    icon: "./favicon.ico",
+  },
   description: "Dan Clubb's portfolio",
 };
 
@@ -16,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="keywords" content="Daniel Clubb, Dan Clubb" />
         <meta property="og:image" content="../public/hero-devices.png" />
       </head>
       <body className={inter.className}>

@@ -38,15 +38,15 @@ export default function Home() {
         <Hero />
       </section>
       <section id="experience" className="experience" ref={experienceRef}>
-        <h1 className="section-heading">Experience</h1>
+        <h2 className="section-heading">Experience</h2>
         <Experience />
       </section>
       <section id="projects" className="projects" ref={projectsRef}>
-        <h1 className="section-heading">Projects</h1>
+        <h2 className="section-heading">Projects</h2>
         <Projects />
       </section>
       <section id="contact" className="contact" ref={contactRef}>
-        <h1 className="section-heading">Contact Me</h1>
+        <h2 className="section-heading">Contact Me</h2>
         <ContactForm />
       </section>
     </Fragment>
