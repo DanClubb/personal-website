@@ -34,7 +34,7 @@ function Header() {
     <Fragment>
       <div data-scroll-watcher ref={scrollWatcherRef}></div>
       <header
-        className={`${scrolled ? "scrolled" : ""} ${
+        className={`nav-header ${scrolled ? "scrolled" : ""} ${
           mobileNavExpanded ? "mobile-nav-open" : ""
         }`}
       >

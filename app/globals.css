@@ -1,8 +1,4 @@
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
   --green: #57ba86;
   --transparent-green: hsl(148 42% 54% / 0.7);
   --bright-green: #00ac44;

@@ -10,12 +10,19 @@ function Projects() {
       url: "https://tic-tac-toe-6mi5.onrender.com/",
       tech: ["react", "socketio", "typescript", "tailwind"],
     },
+    // {
+    //   title: "Note Share",
+    //   description:
+    //     "A web app to store and organise notes. Notes can be shared between users",
+    //   tag: "Coming Soon",
+    //   url: "",
+    // },
     {
-      title: "Note Share",
-      description:
-        "A web app to store and organise notes. Notes can be shared between users",
-      tag: "Coming Soon",
-      url: "",
+      title: "Frontend Mentor Challenges",
+      description: "My solutions to challenges provided by Frontend Mentor",
+      tag: "done",
+      url: "https://danclubb-frontend-mentor-challenges.vercel.app/",
+      tech: ["next", "css"],
     },
     {
       title: "Trello",

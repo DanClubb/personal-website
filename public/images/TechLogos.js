@@ -1,5 +1,6 @@
 const TECH_LOGOS = {
   react: require("./tech/reactjs.png").default,
+  next: require("./tech/next.ico").default,
   tailwind: require("./tech/tailwind.png").default,
   javascript: require("./tech/javascript.png").default,
   typescript: require("./tech/typescript.png").default,

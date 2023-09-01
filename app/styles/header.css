@@ -1,4 +1,4 @@
-header {
+.nav-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -70,7 +70,7 @@ header {
 }
 
 @media (min-width: 53em) {
-  header {
+  .nav-header {
     padding: 1rem 3rem;
     transition: background-color 200ms linear;
   }
