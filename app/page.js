@@ -37,13 +37,13 @@ export default function Home() {
       <section id="hero" className="hero" ref={heroRef}>
         <Hero />
       </section>
-      <section id="experience" className="experience" ref={experienceRef}>
-        <h2 className="section-heading">Experience</h2>
-        <Experience />
-      </section>
       <section id="projects" className="projects" ref={projectsRef}>
         <h2 className="section-heading">Projects</h2>
         <Projects />
+      </section>
+      <section id="experience" className="experience" ref={experienceRef}>
+        <h2 className="section-heading">Experience</h2>
+        <Experience />
       </section>
       <section id="contact" className="contact" ref={contactRef}>
         <h2 className="section-heading">Contact Me</h2>

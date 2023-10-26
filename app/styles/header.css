@@ -57,6 +57,10 @@
 }
 
 @media (max-width: 53em) {
+  .nav-header {
+    margin-bottom: 3rem;
+  }
+
   .nav {
     position: fixed;
     top: 0;

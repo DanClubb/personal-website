@@ -56,22 +56,22 @@ function Header() {
             </li>
             <li>
               <Link
-                href="/#experience"
-                className={`nav__link ${
-                  currentSection === "experience" ? "active" : ""
-                }`}
-              >
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/#projects"
                 className={`nav__link ${
                   currentSection === "projects" ? "active" : ""
                 }`}
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/#experience"
+                className={`nav__link ${
+                  currentSection === "experience" ? "active" : ""
+                }`}
+              >
+                Experience
               </Link>
             </li>
             <li>
