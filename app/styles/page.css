@@ -84,6 +84,10 @@ strong {
   color: var(--bright-green);
 }
 
+.projects {
+  width: 100%;
+}
+
 @media (max-width: 53em) {
   .hero__text {
     text-align: center;

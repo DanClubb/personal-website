@@ -3,102 +3,137 @@ import newTab from "../../public/new-tab.svg";
 import IMAGES from "../../public/images/Images";
 import TECH_LOGOS from "../../public/images/TechLogos";
 import Image from "next/image";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useState } from "react";
 import { Fragment } from "react";
 
-function ProjectCard({ title, description, tag, url, tech }) {
-  const project = title.split(" ").join("");
-  console.log(tech);
+function ProjectCard({ title, description, tag, url, tech, imgPath }) {
+  const [cardIsOpen, setCardIsOPen] = useState(false);
+
+  const toggleCardIsOpen = () => {
+    setCardIsOPen((prev) => !prev);
+  };
+
   return (
-    <article className="project">
-      <header className="project__title-container">
-        <h2 className="project__title">{title}</h2>
-      </header>
-
+    <Fragment>
       {tag === "done" ? (
-        <Carousel
-          className="project__img"
-          autoPlay
-          infiniteLoop
-          showArrows={false}
-          showIndicators={false}
-          showThumbs={false}
-        >
-          {Object.keys(IMAGES[project]).map((img) => (
-            <div key={img}>
-              <Image
-                className="project__img"
-                src={IMAGES[project][img]}
-                width={300}
-                height={150}
-                alt="view in new tab icon"
-              />
+        <article className="project-card-stack" data-stack-open={cardIsOpen}>
+          <div className="project-card stack-layer-one">
+            <div className="project-card-header">
+              <h2 className="project-title">{title}</h2>
+              <button
+                className="project-card-expand-control"
+                onClick={toggleCardIsOpen}
+              >
+                <p className="project-card-expand-control-text">
+                  {cardIsOpen ? "Show Less" : "Show More"}
+                </p>
+                <Image src={IMAGES.arrow} width={10} height={10} alt="arrow" />
+              </button>
             </div>
-          ))}
-        </Carousel>
-      ) : (
-        <div className="image-placeholder">
-          <Image
-            src={IMAGES.placeholder}
-            width={58}
-            height={58}
-            alt="placeholder for an image"
-          />
-        </div>
-      )}
-
-      <p className="project__description">{description}</p>
-      {tech && (
-        <div className="project__tech">
-          {tech.map((techName) => (
-            <figure key={techName}>
-              <Image
-                src={TECH_LOGOS[techName]}
-                width={30}
-                height={30}
-                alt={`${techName} logo`}
-              />
-              <figcaption>{techName}</figcaption>
-            </figure>
-          ))}
-        </div>
-      )}
-      <div className={`tags ${tag === "done" && "done"}`}>
-        {tag === "done" ? (
-          <Fragment>
-            <a className="project-link" href={url} target="_blank">
-              View Live{" "}
-              <Image
-                src={newTab}
-                width={25}
-                height={25}
-                alt="view in new tab icon"
-              />
-            </a>
-
-            <a
-              className="project-link"
-              href="https://github.com/DanClubb/tic-tac-toe"
-              target="_blank"
-            >
-              View GitHub
-              <Image
-                src={IMAGES.githubLogo}
-                width={25}
-                height={25}
-                alt="GitHub link"
-              />
-            </a>
-          </Fragment>
-        ) : (
-          <div className="project__tag">
-            <div className="project__tag-dot"></div>
-            {tag}
+            <div
+              className="project-img"
+              style={{
+                background: `url(${imgPath}) center / cover no-repeat`,
+              }}
+            ></div>
           </div>
-        )}
-      </div>
-    </article>
+          <div
+            className={`project-card stack-layer-two ${
+              cardIsOpen ? "openLayerTwo" : "closeLayerTwo"
+            }`}
+          >
+            <p className="project__description">{description}</p>
+            <div className="project-tech">
+              <h2>Built with:</h2>
+              <div className="project-tech-icons">
+                {tech.map((techName) => (
+                  <figure key={techName}>
+                    <Image
+                      src={TECH_LOGOS[techName]}
+                      width={30}
+                      height={30}
+                      alt={`${techName} logo`}
+                    />
+                    <figcaption>{techName}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div
+            className={`project-card stack-layer-three ${
+              cardIsOpen ? "openLayerThree" : "closeLayerThree"
+            }`}
+          >
+            <div className="project-links">
+              <a className="project-link" href={url} target="_blank">
+                <Image
+                  src={newTab}
+                  width={35}
+                  height={35}
+                  alt="view in new tab icon"
+                />
+                View Live
+              </a>
+
+              <a
+                className="project-link"
+                href="https://github.com/DanClubb/tic-tac-toe"
+                target="_blank"
+              >
+                <div className="github-background">
+                  <Image
+                    className="github-logo"
+                    src={IMAGES.githubLogo}
+                    width={35}
+                    height={35}
+                    alt="GitHub link"
+                  />
+                </div>
+                View GitHub
+              </a>
+            </div>
+
+            <button
+              className="project-card-expand-control"
+              onClick={toggleCardIsOpen}
+            >
+              <p className="project-card-expand-control-text">
+                {cardIsOpen ? "Show Less" : "Show More"}
+              </p>
+              <Image src={IMAGES.arrow} width={10} height={10} alt="arrow" />
+            </button>
+          </div>
+        </article>
+      ) : (
+        <article className="project-card-stack">
+          <div className="project-card stack-layer-one">
+            <div className="project-card-header">
+              <h2 className="project__title">{title}</h2>
+              <div class="project__tag">
+                <div class="project__tag-dot"></div>Coming Soon
+              </div>
+            </div>
+            <div
+              className="project-img"
+              style={{
+                background: `url(${imgPath}) center / cover no-repeat`,
+              }}
+            ></div>
+          </div>
+          <div
+            className={`project-card stack-layer-two ${
+              cardIsOpen ? "openLayerTwo" : "closeLayerTwo"
+            }`}
+          ></div>
+          <div
+            className={`project-card stack-layer-three ${
+              cardIsOpen ? "openLayerThree" : "closeLayerThree"
+            }`}
+          ></div>
+        </article>
+      )}
+    </Fragment>
   );
 }
 

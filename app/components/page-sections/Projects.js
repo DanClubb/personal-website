@@ -1,4 +1,5 @@
 import ProjectCard from "../ProjectCard";
+import IMAGES from "../../../public/images/Images";
 
 function Projects() {
   const projects = [
@@ -9,6 +10,7 @@ function Projects() {
       tag: "done",
       url: "https://tic-tac-toe-6mi5.onrender.com/",
       tech: ["react", "socketio", "typescript", "tailwind"],
+      imgPath: IMAGES.TicTacToe.src,
     },
     // {
     //   title: "Note Share",
@@ -23,6 +25,7 @@ function Projects() {
       tag: "done",
       url: "https://danclubb-frontend-mentor-challenges.vercel.app/",
       tech: ["next", "css"],
+      imgPath: IMAGES.FrontendMentorChallenges.src,
     },
     {
       title: "Trello",
@@ -30,6 +33,7 @@ function Projects() {
         "A project management app that has taken inspiration from trello",
       tag: "Coming Soon",
       url: "",
+      imgPath: IMAGES.placeholder.src,
     },
   ];
 
@@ -44,6 +48,7 @@ function Projects() {
             tag={project.tag}
             url={project.url}
             tech={project.tech}
+            imgPath={project.imgPath}
           />
         );
       })}
