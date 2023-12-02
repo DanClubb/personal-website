@@ -94,8 +94,8 @@ function Header() {
                         </li>
                         <li>
                             <Link
-                                href="/curriculum-vitae"
-                                // target="_blank"
+                                href="/cv.pdf"
+                                target="_blank"
                                 className="nav__link"
                             >
                                 Curriculum Vitae
