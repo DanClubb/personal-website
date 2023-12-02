@@ -55,6 +55,7 @@ footer {
         padding: 0.5rem;
     }
     .footer_personal-info {
+        justify-content: space-between;
         gap: 3rem;
     }
     .footer_site-tech {
