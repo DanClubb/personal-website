@@ -8,7 +8,7 @@ export default function page() {
                 width="100%"
                 height="100%"
                 frameBorder="0"
-                scrolling="no"
+                scrolling="yes"
             ></iframe>
         </div>
     );
