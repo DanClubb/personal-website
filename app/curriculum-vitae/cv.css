@@ -4,6 +4,6 @@
     height: 98%;
 }
 
-main:has(> .pdf) {
+main:has(.pdf) {
     height: 100%;
 }
