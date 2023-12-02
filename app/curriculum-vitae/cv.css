@@ -1,12 +1,9 @@
-.cv-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 3.4rem;
-  scroll-margin-top: 1rem;
+.pdf {
+    margin: 1rem auto;
+    width: 95%;
+    height: 98%;
 }
 
-.cv {
-  box-shadow: 2px 2px 25px var(--dark-grey);
+main:has(> .pdf) {
+    height: 100%;
 }

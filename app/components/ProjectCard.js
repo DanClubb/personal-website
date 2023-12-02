@@ -110,8 +110,8 @@ function ProjectCard({ title, description, tag, url, tech, imgPath }) {
           <div className="project-card stack-layer-one">
             <div className="project-card-header">
               <h2 className="project__title">{title}</h2>
-              <div class="project__tag">
-                <div class="project__tag-dot"></div>Coming Soon
+              <div className="project__tag">
+                <div className="project__tag-dot"></div>Coming Soon
               </div>
             </div>
             <div

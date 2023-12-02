@@ -2,18 +2,13 @@ function Experience() {
   return (
     <div className="experience__card">
       <h3 className="experience__title">Zone | September 2021 - July 2023</h3>
-      <p className="experience__description">
-        Zone focuses on helping clients across various industries create and
-        optimize their digital presence to engage and connect with their target
-        audience.
-      </p>
 
       <p className="experience__description">
         Zone has given me almost 2 years of professional experience as a
         frontend developer. During this time I worked large scale client
         projects. <strong>Elextrolux</strong> on their online retail store, and{" "}
-        <strong>Greene King</strong> on their online booking journey allowing
-        users to book a table or occasion. I also spent time working on an
+        <strong>Greene King</strong> enhancing a web app for table reservations
+        at Greene King pubs. I also spent time working on an
         <strong> internal car park booking system</strong> for Zone employees.
       </p>
       <p>

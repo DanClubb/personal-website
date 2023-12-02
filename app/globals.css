@@ -1,12 +1,12 @@
 :root {
-  --green: #57ba86;
-  --transparent-green: hsl(148 42% 54% / 0.7);
-  --bright-green: #00ac44;
-  --dark-grey: #374151;
-  --light-grey: #666666;
-  --very-light-grey: #ebebeb;
-  --white: #fff;
-  /* --h1:  */
+    --green: #57ba86;
+    --transparent-green: hsl(148 42% 54% / 0.7);
+    --bright-green: #00ac44;
+    --dark-grey: #374151;
+    --light-grey: #666666;
+    --very-light-grey: #ebebeb;
+    --white: #fff;
+    /* --h1:  */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -16,34 +16,39 @@
 } */
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 .image-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  background-color: whitesmoke;
-  box-shadow: 0 4px 6px -6px var(--light-grey),
-    0 -4px 6px -6px var(--light-grey), 0 4px 6px -6px var(--light-grey),
-    0 4px 6px -6px var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 6px -6px var(--light-grey),
+        0 -4px 6px -6px var(--light-grey), 0 4px 6px -6px var(--light-grey),
+        0 4px 6px -6px var(--light-grey);
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useContext, createContext } from "react";
 
-const NavContext = createContext({});
+const NavContext = createContext();
 
 export const NavContextProvider = ({ ...props }) => {
   const [currentSection, setCurrentSection] = useState({
