@@ -1,20 +1,64 @@
 html {
-  scroll-behavior: smooth !important;
-  scroll-padding-top: 4rem;
+    scroll-behavior: smooth !important;
+    scroll-padding-top: 4rem;
 }
 
 body {
-  color: var(--dark-grey);
-  /* font-family: var(--font-mono); */
-  font-size: 1.125rem;
-  line-height: 1.5;
+    color: var(--dark-grey);
+    /* font-family: var(--font-mono); */
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 main {
-  color: var(--dark-grey);
+    color: var(--dark-grey);
 }
 
 footer {
-  background-color: var(--light-grey);
-  color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    height: 8rem;
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.footer_personal-info {
+    display: flex;
+    gap: 8rem;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer_site-tech {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+    .footer_personal-info {
+        gap: 3rem;
+    }
+    .footer_site-tech {
+        margin-right: auto;
+        font-size: 0.8rem;
+    }
 }
