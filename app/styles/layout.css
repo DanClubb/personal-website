@@ -56,7 +56,7 @@ footer {
     }
     .footer_personal-info {
         justify-content: space-between;
-        gap: 3rem;
+        gap: unset;
     }
     .footer_site-tech {
         margin-right: auto;
