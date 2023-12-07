@@ -1,7 +1,7 @@
 section {
     width: min(70ch, 100% - 4rem);
     margin-inline: auto;
-    min-height: calc(100vh - 4rem);
+    min-height: calc(100vh - 7rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,6 +103,10 @@ strong {
 }
 
 @media (min-width: 53em) {
+    section {
+        min-height: calc(100vh - 4rem);
+    }
+
     .section-heading {
         color: var(--bright-green);
         font-size: 3.85rem;
