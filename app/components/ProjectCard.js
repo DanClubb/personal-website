@@ -1,10 +1,9 @@
-import "../styles/project-card.css";
-import newTab from "../../public/new-tab.svg";
+import Image from "next/image";
+import { Fragment, useState } from "react";
 import IMAGES from "../../public/images/Images";
 import TECH_LOGOS from "../../public/images/TechLogos";
-import Image from "next/image";
-import { useState } from "react";
-import { Fragment } from "react";
+import newTab from "../../public/new-tab.svg";
+import "../styles/project-card.css";
 
 function ProjectCard({ title, description, tag, url, tech, imgPath }) {
   const [cardIsOpen, setCardIsOPen] = useState(false);
@@ -50,8 +49,7 @@ function ProjectCard({ title, description, tag, url, tech, imgPath }) {
                   <figure key={techName}>
                     <Image
                       src={TECH_LOGOS[techName]}
-                      width={30}
-                      height={30}
+                      width={techName === 'nextAuth' ? 27 : 30}
                       alt={`${techName} logo`}
                     />
                     <figcaption>{techName}</figcaption>
