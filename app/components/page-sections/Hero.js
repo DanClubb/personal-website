@@ -9,7 +9,7 @@ function Hero() {
         <h1 className="hero__text--header">
           Hi, I&apos;m <span className="hero__text--name">Daniel</span>
         </h1>
-        <h3 className="hero__text--sub-header">Frontend Developer</h3>
+        <h2 className="hero__text--sub-header">Frontend Developer</h2>
         <p className="hero__text--paragraphy">
           I am a frontend developer who loves problem solving while creating
           complex functionality and implementing designs with pixel-perfect
