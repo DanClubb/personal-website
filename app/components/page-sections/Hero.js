@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import Image from "next/image";
+import { Fragment } from "react";
 import heroDevices from "../../../public/hero-devices.svg";
 
 function Hero() {
@@ -26,6 +26,7 @@ function Hero() {
           fill={true}
           alt="collection of devices I use while working"
           className="hero__devices"
+          priority
         />
       </div>
     </Fragment>
