@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             <div className="footer_personal-info">
                 <div>
-                    <h4>I&apos;m Daniel Clubb</h4>
+                    <h3>Daniel Clubb</h3>
                     <p>software developer</p>
                 </div>
                 <div>
