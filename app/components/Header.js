@@ -97,6 +97,7 @@ function Header() {
                                 href="/cv.pdf"
                                 target="_blank"
                                 className="nav__link"
+                                rel="noopener noreferrer"
                             >
                                 Curriculum Vitae
                             </Link>
