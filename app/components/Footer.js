@@ -20,6 +20,7 @@ function Footer() {
                                     src={IMAGES.githubLogo}
                                     width={30}
                                     height={30}
+                                    alt="github logo"
                                 />
                                 GitHub
                             </a>
@@ -33,6 +34,7 @@ function Footer() {
                                     src={IMAGES.LinkedIn}
                                     width={30}
                                     height={30}
+                                    alt="linkedin logo"
                                 />
                                 LinkedIn
                             </a>
