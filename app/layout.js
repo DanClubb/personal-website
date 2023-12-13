@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dan Clubb",
+  description: "On the site, you'll find a showcase of my previous work experiences and some personal projects that I've been working on. I'm eager to share my coding adventures with you all!",
   icons: {
     icon: "/icon.ico",
   },
