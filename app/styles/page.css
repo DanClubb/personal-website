@@ -1,5 +1,8 @@
-section {
-    width: min(70ch, 100% - 4rem);
+section:not(:first-child) {
+  padding: 2rem 0;
+}
+.container {
+  width: min(70ch, 100% - 4rem);
     margin-inline: auto;
     min-height: calc(100vh - 7rem);
     display: flex;
@@ -47,8 +50,18 @@ section {
     height: unset !important;
 }
 
-.experience {
-    margin-bottom: 5rem;
+#projects {
+  background-color: rgba(175, 238, 238, 0.1);
+}
+
+#experience {
+  padding-top: 5rem;
+  background-color: rgba(142, 207, 171, 0.15);
+}
+
+#contact {
+  padding-top: 5rem;
+  background-color: whitesmoke;
 }
 
 .experience__card {
@@ -88,7 +101,6 @@ strong {
 }
 
 .projects {
-    margin-bottom: 5rem;
     width: 100%;
 }
 
@@ -103,7 +115,7 @@ strong {
 }
 
 @media (min-width: 53em) {
-    section {
+    .container {
         min-height: calc(100vh - 4rem);
     }
 

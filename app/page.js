@@ -34,20 +34,29 @@ export default function Home() {
 
     return (
         <Fragment>
-            <section id="hero" className="hero" ref={heroRef}>
-                <Hero />
+            <section id="hero" ref={heroRef}>
+                <div className="hero container">
+                    <Hero />
+                </div>
             </section>
-            <section id="projects" className="projects" ref={projectsRef}>
-                <h2 className="section-heading">Projects</h2>
-                <Projects />
+            <section id="projects" ref={projectsRef}>
+                <div className="projects container">
+                   <h2 className="section-heading">Projects</h2>
+                    <Projects /> 
+                </div>
+                
             </section>
-            <section id="experience" className="experience" ref={experienceRef}>
-                <h2 className="section-heading">Experience</h2>
-                <Experience />
+            <section id="experience" ref={experienceRef}>
+                <div className="experience container">
+                    <h2 className="section-heading">Experience</h2>
+                    <Experience />
+                </div>
             </section>
-            <section id="contact" className="contact" ref={contactRef}>
-                <h2 className="section-heading">Contact Me</h2>
-                <ContactForm />
+            <section id="contact" ref={contactRef}>
+                <div className="contact container">
+                    <h2 className="section-heading">Contact Me</h2>
+                    <ContactForm />
+                </div>
             </section>
         </Fragment>
     );
