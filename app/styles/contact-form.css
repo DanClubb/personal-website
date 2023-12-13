@@ -55,15 +55,17 @@
 }
 
 .alert {
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 0.3rem 0.6rem;
   width: 100%;
+  min-height: 4.1rem;
   border-radius: 5px;
   color: var(--dark-grey);
+  font-size: 1rem;
 }
 
 .alert span {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -77,6 +79,7 @@
 
 .hidden {
   visibility: hidden;
+  background-color: rgba(87 186 134 / 0.5);
 }
 
 .show {

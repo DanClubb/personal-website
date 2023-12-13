@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import "../../styles/contact-form.css";
-import Tick from "../Tick";
 import LoadingSpinner from "../LoadingSpinner";
+import Tick from "../Tick";
 
 function ContactForm() {
   const [formBtnContent, setFormBtnContent] = useState("Send");
@@ -103,7 +103,7 @@ function ContactForm() {
           formBtnContent === "Try Again" && "alert--error"
         }`}
       >
-        {formBtnContent === "tick" && (
+        {formBtnContent === 'tick' && (
           <p>
             <span>Success alert!</span>
             <br />
