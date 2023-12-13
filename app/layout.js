@@ -21,7 +21,8 @@ export const metadata = {
         width: 150,
         height: 50,
       },
-    ]
+    ],
+    author: 'Dan Clubb'
   },
   
 };
