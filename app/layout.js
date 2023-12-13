@@ -10,11 +10,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Dan Clubb",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.ico",
   },
   openGraph: {
     title: 'Dan Clubb',
     description: "Dan Clubb's portfolio",
+    images: [
+      {
+        url: '/images/hero-devices.png',
+        width: 600,
+        height: 200,
+      },
+    ]
   },
   
 };
