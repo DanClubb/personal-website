@@ -14,7 +14,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Dan Clubb',
-    description: "Dan Clubb's portfolio",
+    description: "On the site, you'll find a showcase of my previous work experiences and some personal projects that I've been working on. I'm eager to share my coding adventures with you all!",
     images: [
       {
         url: '/images/hero-devices.png',
