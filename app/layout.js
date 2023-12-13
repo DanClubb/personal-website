@@ -12,7 +12,11 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  description: "Dan Clubb's portfolio",
+  openGraph: {
+    title: 'Dan Clubb',
+    description: "Dan Clubb's portfolio",
+  },
+  
 };
 
 export default function RootLayout({ children }) {
