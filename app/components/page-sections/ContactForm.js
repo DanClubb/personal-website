@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import Lottie from "lottie-react";
+import { Fragment, useRef, useState } from "react";
+import confetti from "../../animations/confetti.json";
 import "../../styles/contact-form.css";
 import LoadingSpinner from "../LoadingSpinner";
 import Tick from "../Tick";
@@ -104,11 +106,15 @@ function ContactForm() {
         }`}
       >
         {formBtnContent === 'tick' && (
-          <p>
-            <span>Success alert!</span>
-            <br />
-            Your message was sent successfully
-          </p>
+          <Fragment>
+            <Lottie animationData={confetti} loop={false} style={{position: "absolute", top: '-15rem', left: '50%', transform: 'translateX(-50%)', width: '20rem', height: '20rem'}} />
+            <p>
+              <span>Success alert!</span>
+              <br />
+              Your message was sent successfully
+            </p>
+          </Fragment>
+          
         )}
 
         {formBtnContent === "Try Again" && (
