@@ -5,6 +5,7 @@
     margin-top: 2rem;
     padding: 0 5rem;
     width: 100%;
+    max-width: 90rem;
 }
 
 .project-card-stack {
@@ -25,7 +26,7 @@
 
 .project-card {
     display: flex;
-    width: 50%;
+    width: 37rem;
     height: 15rem;
     border: 2px solid var(--bright-green);
     border-radius: 5px;
@@ -174,7 +175,7 @@
 
 figure {
     flex-shrink: 0;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,6 +208,43 @@ figcaption {
 .github-background {
     background-color: white;
     border-radius: 50%;
+}
+
+@media (max-width: 1600px) {
+    .projects-container {
+        max-width: 80rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-card {
+        width: 85%;
+    }
+
+    .stack-layer-two,
+    .stack-layer-three {
+        padding: 1rem 2rem 2rem;
+    }
+
+    .project-tech-icons {
+        gap: 1rem;
+        width: fit-content;
+        max-width: 97%;
+    }
+
+}
+
+@media (max-width: 725px) {
+    .projects-container {
+        padding: 0 2.5rem;
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 600px) {

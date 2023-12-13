@@ -4,7 +4,7 @@ import ProjectCard from "../ProjectCard";
 function Projects() {
     const projects = [
         {
-            title: "TicTacToe",
+            title: "Multiplayer TicTacToe",
             description:
                 "An online multiplayer TicTacToe game allowing users on different devices to play against each other",
             tag: "done",
@@ -22,7 +22,7 @@ function Projects() {
             imgPath: IMAGES.FrontendMentorChallenges.src,
         },
         {
-            title: "Note Share",
+            title: "NoteShare",
             description: "",
             tag: "done",
             url: "https://noteshare-ten.vercel.app/",
