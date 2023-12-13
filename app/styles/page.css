@@ -56,12 +56,10 @@ section:not(:first-child) {
 
 #experience {
   padding-top: 5rem;
-  /* background-color: rgba(175, 238, 238, 0.1); */
 }
 
 #contact {
   padding-top: 5rem;
-  /* background-color: rgba(245, 245, 245, 0.5); */
   background-color: rgba(142, 207, 171, 0.15);
 }
 
