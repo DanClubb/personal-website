@@ -18,8 +18,8 @@ export const metadata = {
     images: [
       {
         url: '/images/hero-devices.png',
-        width: 600,
-        height: 200,
+        width: 150,
+        height: 50,
       },
     ]
   },
