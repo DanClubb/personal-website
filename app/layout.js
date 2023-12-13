@@ -1,16 +1,16 @@
-import "./globals.css";
-import "./styles/layout.css";
 import { Inter } from "next/font/google";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { NavContextProvider } from "./context/nav-context";
-import Footer from "./components/Footer";
+import "./globals.css";
+import "./styles/layout.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dan Clubb",
   icons: {
-    icon: "./favicon.ico",
+    icon: "/favicon.ico",
   },
   description: "Dan Clubb's portfolio",
 };
