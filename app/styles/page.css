@@ -36,6 +36,7 @@ section:not(:first-child) {
 
 .hero__text--paragraphy {
     margin-top: 1rem;
+    max-width: 41rem;
     font-weight: normal;
 }
 
