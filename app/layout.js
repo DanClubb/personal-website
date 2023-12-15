@@ -10,12 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Dan Clubb",
   description: "On the site, you'll find a showcase of my previous work experiences and some personal projects that I've been working on. I'm eager to share my coding adventures with you all!",
+  authors: [{name: 'Dan Clubb'}],
+  keywords: ['Dan Clubb', 'Daniel Clubb', 'Frontend developer', 'Software developer', 'Portfolio'],
   icons: {
     icon: "/icon.ico",
   },
   openGraph: {
     title: 'Dan Clubb',
     description: "On the site, you'll find a showcase of my previous work experiences and some personal projects that I've been working on. I'm eager to share my coding adventures with you all!",
+    url: 'https://www.danclubb.com/',
     images: [
       {
         url: '/images/hero-devices.png',
@@ -23,7 +26,7 @@ export const metadata = {
         height: 50,
       },
     ],
-    author: 'Dan Clubb'
+    authors: ['Dan Clubb']
   },
   
 };
