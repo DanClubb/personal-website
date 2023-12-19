@@ -93,14 +93,14 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 href="/cv.pdf"
                                 target="_blank"
                                 className="nav__link"
                                 rel="noopener noreferrer"
                             >
                                 Curriculum Vitae
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </nav>
