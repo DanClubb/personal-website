@@ -10,9 +10,9 @@ function Hero() {
                     Hi, I&apos;m{" "}
                     <span className="hero__text--name">Daniel Clubb</span>
                 </h1>
-                <h2 className="hero__text--sub-header">Frontend Developer</h2>
+                <h2 className="hero__text--sub-header">Software Developer</h2>
                 <p className="hero__text--paragraphy">
-                    I am a frontend developer who loves problem solving while
+                    I am a software developer who loves problem solving while
                     creating complex functionality and implementing designs with
                     pixel-perfect accuracy.
                     <br />
