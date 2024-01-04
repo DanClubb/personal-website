@@ -8,7 +8,7 @@ function Hero() {
             <div className="hero__text">
                 <h1 className="hero__text--header">
                     Hi, I&apos;m{" "}
-                    <span className="hero__text--name">Daniel Clubb</span>
+                    <span className="hero__text--name">Dan Clubb</span>
                 </h1>
                 <h2 className="hero__text--sub-header">Software Developer</h2>
                 <p className="hero__text--paragraphy">
