@@ -231,7 +231,6 @@ figcaption {
         width: fit-content;
         max-width: 97%;
     }
-
 }
 
 @media (max-width: 725px) {
@@ -321,4 +320,14 @@ figcaption {
     top: 2rem;
     left: 0rem;
     transition: 1s;
+}
+
+@media (max-width: 600px) {
+    .openLayerTwo {
+        top: 15.5rem;
+    }
+
+    .openLayerThree {
+        top: 31rem;
+    }
 }
