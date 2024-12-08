@@ -39,6 +39,14 @@ function Footer() {
                                 LinkedIn
                             </a>
                         </li>
+                        <li>
+                              <a
+                                href="https://fragrancefinds.co.uk"
+                                target="_blank"
+                            >
+                                Fragrance Finds
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
